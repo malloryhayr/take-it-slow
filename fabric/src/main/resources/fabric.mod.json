@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "takeitslow",
+  "version": "${version}",
+  "name": "Take it Slow",
+  "description": "Who needs sprinting anyways?",
+  "authors": [
+    "iGalaxy"
+  ],
+  "contact": {
+    "homepage": "https://github.com/iGalaxyYT/take-it-slow",
+    "sources": "https://github.com/iGalaxyYT/take-it-slow"
+  },
+  "license": "MIT",
+  "icon": "assets/takeitslow/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.igalaxy.takeitslow.fabric.FabricEntrypoint"
+    ],
+    "modmenu": [
+      "dev.igalaxy.takeitslow.fabric.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "takeitslow.mixins.json",
+    "takeitslow-common.mixins.json"
+  ],
+  "depends": {
+    "fabric": "*",
+    "minecraft": ">=1.18.2",
+    "java": ">=17",
+    "cloth-config2": ">=6.0.0"
+  },
+  "suggests": {
+    "modmenu": ">=3.0.0"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "dev.igalaxy.takeitslow.mixin",
+  "compatibilityLevel": "JAVA_16",
+  "client": [
+    "LocalPlayerMixin",
+    "MultiPlayerGameModeAccessor"
+  ],
+  "mixins": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
