@@ -27,11 +27,11 @@
     "takeitslow-common.mixins.json"
   ],
   "depends": {
-    "minecraft": ">=1.18",
+    "minecraft": ">=1.19",
     "java": ">=17",
-    "cloth-config2": ">=6.0.0"
+    "cloth-config2": ">=7.0.0"
   },
   "suggests": {
-    "modmenu": ">=3.0.0"
+    "modmenu": ">=4.0.0"
   }
 }
