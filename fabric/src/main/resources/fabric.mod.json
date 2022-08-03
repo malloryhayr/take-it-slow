@@ -29,7 +29,7 @@
   "depends": {
     "minecraft": ">=1.19",
     "java": ">=17",
-    "cloth-config2": ">=7.0.0"
+    "cloth-config2": ">=8.0.0"
   },
   "suggests": {
     "modmenu": ">=4.0.0"
