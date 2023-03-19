@@ -4,6 +4,8 @@
   "compatibilityLevel": "JAVA_16",
   "client": [
     "LocalPlayerMixin",
+    "LocalPlayerAccessor",
+    "LivingEntityMixin",
     "MultiPlayerGameModeAccessor"
   ],
   "mixins": [
