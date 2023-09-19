@@ -5,6 +5,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.level.GameType;
+import net.minecraft.world.level.material.Material;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
@@ -25,8 +26,9 @@ public abstract class LocalPlayerMixin {
         boolean isUnderwater = this.isUnderWater();
         boolean isCreative = localPlayerMode == GameType.CREATIVE;
         boolean isSpectator = localPlayerMode == GameType.SPECTATOR;
+        boolean isFlying = this.minecraft.player.getAbilities().flying;
 
-        if (!isUnderwater && !isCreative && !isSpectator) {
+        if (!isUnderwater && !isCreative && !isSpectator && !isFlying) {
             ((LivingEntity) (Object) this).setSprinting(false);
         }
     }

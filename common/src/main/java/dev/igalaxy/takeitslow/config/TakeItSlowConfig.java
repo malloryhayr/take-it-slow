@@ -11,4 +11,7 @@ public class TakeItSlowConfig implements ConfigData {
 
     @ConfigEntry.Category("Movement")
     public boolean allowCreative = true;
+
+    @ConfigEntry.Category("Movement")
+    public boolean allowFlying = true;
 }

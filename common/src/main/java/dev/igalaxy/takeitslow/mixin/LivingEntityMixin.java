@@ -19,12 +19,15 @@ public class LivingEntityMixin {
 
             boolean allowSwimming = TakeItSlow.getConfig().allowSwimming;
             boolean allowCreative = TakeItSlow.getConfig().allowCreative;
+            boolean allowFlying = TakeItSlow.getConfig().allowFlying;
 
             boolean isUnderwater = player.isUnderWater();
             boolean isCreative = localPlayerMode == GameType.CREATIVE;
             boolean isSpectator = localPlayerMode == GameType.SPECTATOR;
+            boolean isFlying = player.getAbilities().flying;
 
-            return (isUnderwater && bl && allowSwimming) || (isCreative && bl && allowCreative) || (isSpectator && bl && allowCreative);
+
+            return (isUnderwater && bl && allowSwimming) || (isCreative && bl && allowCreative) || (isSpectator && bl && allowCreative) || (isFlying && bl && allowFlying);
         }
         return bl;
     }
